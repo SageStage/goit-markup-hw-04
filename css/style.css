@@ -80,6 +80,7 @@ img {
     =======================
 */
 
+
 header {
     border-bottom: 1px solid #ECECEC;
 }
@@ -190,8 +191,7 @@ header {
 }
 
 .header-icons {
-    width: 16px;
-    height: 12px;
+    
     fill: currentColor;
 }
 
@@ -219,6 +219,9 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto auto;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
 
 }
 
@@ -285,28 +288,37 @@ header {
 }
 
 /*определение списка карточек в секции Особливості. */
-.feature-list {
+ul.feature-list {
 
     display: flex;
     justify-content: space-between;
 }
 
 /*определение <li> карточек в секции Особливості. */
-.feature-card:not(:last-child) {
-
+li.feature-card:not(:last-child) {
+    
     margin-right: 30px;
 }
 
 .feature-icons {
     width: 70px;
     height: 70px;
-}
 
-.feature-icons-fone {
+}
+div.feature-icons-fone{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--section-bacground-color);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+/*.feature-icons-fone {
     background-color: var(--section-bacground-color);
     padding: 25px 100px;
     margin-bottom: 30px;
-}
+}*/
 
 /*     ======================== 
     === Секция main -> activity ====
@@ -619,17 +631,22 @@ address>ul>li:not(:last-child) {
 
 }
 
-.a-portfolio-list-card-item>div:hover,
-.a-portfolio-list-card-item>div:active,
-.a-portfolio-list-card-item>div:focus {
+.a-portfolio-list-card-item {
+    display: block;
+}
+.a-portfolio-list-card-item:hover,
+.a-portfolio-list-card-item:active,
+.a-portfolio-list-card-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 
 .div-portfolio-list-name {
     padding: 20px 24px;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
+    
 }
 
 /*Задаем стиль заголовка карточки проекта*/

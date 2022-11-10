@@ -460,11 +460,14 @@ a.client-link {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 170px;
+    height: 92px;
 
     color: var(--link-gray-color);
     background-color: var(--text-white-color); 
     border: 1px solid var(--link-gray-color);
-    padding: 16px 32px;
+  
+    
    
 }
 
